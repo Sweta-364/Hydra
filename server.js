@@ -9,7 +9,7 @@ app.use(express.static("public"));
 
 const PORT = process.env.PORT || 3000;
 
-const ADMIN_PASSWORD = "password123";
+const ADMIN_PASSWORD = "123123123";
 
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
