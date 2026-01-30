@@ -4,23 +4,33 @@ const path = require("path");
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
 app.use(express.static("public"));
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
+/*
+  intentionally weak demo credentials
+*/
+const ADMIN_USER = "admin";
 const ADMIN_PASSWORD = "123123123";
 
+/*
+  HYDRA FRIENDLY LOGIN
+  IMPORTANT:
+  - always 200 status
+  - failure text only
+*/
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
 
-  if (username === "admin" && password === ADMIN_PASSWORD) {
-    return res.redirect("/hacked.html");
+  if (username === ADMIN_USER && password === ADMIN_PASSWORD) {
+    return res.redirect("/hacked.html"); // success
   }
 
-  return res.status(401).send("Invalid credentials");
+  // DO NOT send 401
+  return res.send("Invalid credentials"); // 200 OK
 });
 
-app.listen(PORT, () =>
-  console.log(`Server running at http://localhost:${PORT}`),
-);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Server running on port ${PORT}`);
+});
