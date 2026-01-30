@@ -12,7 +12,7 @@ const PORT = 3000;
   intentionally weak demo credentials
 */
 const ADMIN_USER = "admin";
-const ADMIN_PASSWORD = "123123123";
+const ADMIN_PASSWORD = "baseball";
 
 /*
   HYDRA FRIENDLY LOGIN
