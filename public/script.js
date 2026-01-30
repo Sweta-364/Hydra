@@ -1,8 +1,13 @@
 const form = document.getElementById("loginForm");
 const msg = document.getElementById("msg");
+const btn = document.getElementById("loginBtn");
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
+
+  msg.textContent = "";
+  btn.textContent = "Signing in...";
+  btn.disabled = true;
 
   const data = new URLSearchParams(new FormData(form));
 
@@ -12,7 +17,9 @@ form.addEventListener("submit", async (e) => {
   });
 
   if (res.status === 401) {
-    msg.textContent = "Invalid credentials";
+    btn.disabled = false;
+    btn.textContent = "Sign in";
+    msg.textContent = "Invalid username or password";
   } else {
     window.location = "/hacked.html";
   }

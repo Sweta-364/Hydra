@@ -1,27 +1,68 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Secure Admin Portal</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orion Systems | Admin Portal</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="container">
-      <h1>Admin Login</h1>
+    <!-- Top navigation -->
+    <header class="nav">
+      <div class="logo">
+        <span class="dot"></span>
+        Orion Systems
+      </div>
+      <div class="nav-right">
+        <span class="status">● Secure Connection</span>
+      </div>
+    </header>
 
-      <form id="loginForm" method="POST" action="/login">
-        <input name="username" placeholder="Username" required />
-        <input
-          name="password"
-          type="password"
-          placeholder="Password"
-          required
-        />
-        <button>Login</button>
-      </form>
+    <!-- Main -->
+    <main class="main">
+      <section class="left-panel">
+        <h1>Administration Console</h1>
+        <p>
+          Restricted access. Authorized personnel only. All authentication
+          attempts are logged and monitored.
+        </p>
 
-      <p id="msg"></p>
-    </div>
+        <ul class="features">
+          <li>Real-time monitoring</li>
+          <li>Audit trail logging</li>
+          <li>Encrypted authentication</li>
+          <li>Role-based access control</li>
+        </ul>
+      </section>
+
+      <section class="login-card">
+        <div class="card-header">
+          <h2>Sign in</h2>
+          <span>Admin access</span>
+        </div>
+
+        <form id="loginForm" method="POST" action="/login">
+          <label>Username</label>
+          <input name="username" placeholder="admin" required />
+
+          <label>Password</label>
+          <input
+            name="password"
+            type="password"
+            placeholder="Enter password"
+            required
+          />
+
+          <button type="submit" id="loginBtn">Sign in</button>
+
+          <p id="msg" class="error"></p>
+        </form>
+
+        <div class="footer-note">© 2026 Orion Systems</div>
+      </section>
+    </main>
 
     <script src="script.js"></script>
   </body>

@@ -1,23 +1,434 @@
 <!doctype html>
 <html>
   <head>
-    <title>Hacked</title>
-    <style>
-      body {
-        background: black;
-        color: #00ff00;
-        font-family: monospace;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        font-size: 40px;
-        text-align: center;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orion Systems | Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    SYSTEM COMPROMISED<br />
-    ADMIN ACCOUNT BREACHED
+    <header class="nav">
+      <div class="logo">
+        <span class="dot"></span>
+        Orion Systems — Admin Console
+      </div>
+      <span class="status">ADMIN ACCESS GRANTED</span>
+    </header>
+
+    <div class="dashboard">
+      <!-- top stats -->
+      <div class="stats">
+        <div class="card">
+          <h3>Total UseRs.</h3>
+          <p>54</p>
+        </div>
+        <div class="card">
+          <h3>Active Accounts</h3>
+          <p>32</p>
+        </div>
+        <div class="card">
+          <h3>Transactions Today</h3>
+          <p>214</p>
+        </div>
+        <div class="card">
+          <h3>System Status</h3>
+          <p style="color: #16a34a">Admin Logged In</p>
+        </div>
+      </div>
+
+      <!-- fake financial data -->
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Client</th>
+              <th>Account ID</th>
+              <th>Balance</th>
+              <th>Status</th>
+              <th>Password</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Demo Holdings</td>
+              <td>6754 4832</td>
+              <td>Rs.24,820</td>
+              <td>Active</td>
+              <td>fgU73hi90</td>
+            </tr>
+            <tr>
+              <td>Sandbox Corp</td>
+              <td>3321 1194</td>
+              <td>Rs.9,230</td>
+              <td>Active</td>
+              <td>jncw7831bhw9kj</td>
+            </tr>
+            <tr>
+              <td>Test Finance</td>
+              <td>9076 7721</td>
+              <td>Rs.61,440</td>
+              <td>Flagged</td>
+              <td>jnwcHACK893cbh??</td>
+            </tr>
+            <tr>
+              <td>Internal QA</td>
+              <td>4309 3328</td>
+              <td>Rs.3,900</td>
+              <td>Active</td>
+              <td>12345678hjvfe</td>
+            </tr>
+            <tr>
+              <td>Demo Holdings</td>
+              <td>6754 4832</td>
+              <td>Rs.24,820</td>
+              <td>Active</td>
+              <td>fgU73hi90</td>
+            </tr>
+            <tr>
+              <td>Sandbox Corp</td>
+              <td>1129 7741</td>
+              <td>Rs.9,230</td>
+              <td>Active</td>
+              <td>Tr8Ls92ka</td>
+            </tr>
+            <tr>
+              <td>BluePeak Ltd</td>
+              <td>9043 2217</td>
+              <td>Rs.15,940</td>
+              <td>Inactive</td>
+              <td>Pw7Qn41zx</td>
+            </tr>
+            <tr>
+              <td>NorthGrid</td>
+              <td>6610 8832</td>
+              <td>Rs.52,110</td>
+              <td>Active</td>
+              <td>kL09dn28P</td>
+            </tr>
+            <tr>
+              <td>Quantum Ops</td>
+              <td>7842 1003</td>
+              <td>Rs.8,330</td>
+              <td>Active</td>
+              <td>Yt72smQ19</td>
+            </tr>
+            <tr>
+              <td>Vertex Labs</td>
+              <td>9921 4456</td>
+              <td>Rs.38,270</td>
+              <td>Flagged</td>
+              <td>bH82kaT61</td>
+            </tr>
+            <tr>
+              <td>CoreMatrix</td>
+              <td>3120 6651</td>
+              <td>Rs.4,990</td>
+              <td>Active</td>
+              <td>Js6Lm72Qa</td>
+            </tr>
+            <tr>
+              <td>Helio Systems</td>
+              <td>5501 9042</td>
+              <td>Rs.74,210</td>
+              <td>Active</td>
+              <td>rX03Pf71N</td>
+            </tr>
+            <tr>
+              <td>AlphaSphere</td>
+              <td>2099 1182</td>
+              <td>Rs.11,800</td>
+              <td>Inactive</td>
+              <td>Vu92Ld30M</td>
+            </tr>
+            <tr>
+              <td>Nebula Tech</td>
+              <td>8217 3310</td>
+              <td>Rs.63,420</td>
+              <td>Active</td>
+              <td>eR51kxQ87</td>
+            </tr>
+
+            <tr>
+              <td>DeltaStack</td>
+              <td>7432 9281</td>
+              <td>Rs.19,600</td>
+              <td>Active</td>
+              <td>Qp49Lm21T</td>
+            </tr>
+            <tr>
+              <td>IronVault</td>
+              <td>1184 6722</td>
+              <td>Rs.90,110</td>
+              <td>Flagged</td>
+              <td>nZ17ka83X</td>
+            </tr>
+            <tr>
+              <td>PulseWare</td>
+              <td>6392 1008</td>
+              <td>Rs.27,340</td>
+              <td>Active</td>
+              <td>fH72Lm91B</td>
+            </tr>
+            <tr>
+              <td>Orchid Data</td>
+              <td>4450 2231</td>
+              <td>Rs.5,620</td>
+              <td>Inactive</td>
+              <td>Tp63Qn52J</td>
+            </tr>
+            <tr>
+              <td>CloudForge</td>
+              <td>7749 3190</td>
+              <td>Rs.41,280</td>
+              <td>Active</td>
+              <td>mK81Ys02L</td>
+            </tr>
+            <tr>
+              <td>VectorWorks</td>
+              <td>2207 8841</td>
+              <td>Rs.12,310</td>
+              <td>Active</td>
+              <td>Rs.19Pt63A</td>
+            </tr>
+            <tr>
+              <td>ByteHarbor</td>
+              <td>9851 7763</td>
+              <td>Rs.68,530</td>
+              <td>Flagged</td>
+              <td>wM37Qa21H</td>
+            </tr>
+            <tr>
+              <td>Atlas Secure</td>
+              <td>1023 4498</td>
+              <td>Rs.7,910</td>
+              <td>Active</td>
+              <td>cD84Zn52P</td>
+            </tr>
+            <tr>
+              <td>Echo Labs</td>
+              <td>6644 2132</td>
+              <td>Rs.22,780</td>
+              <td>Active</td>
+              <td>Uv09Ls41Q</td>
+            </tr>
+            <tr>
+              <td>Crux Dynamics</td>
+              <td>3509 9932</td>
+              <td>Rs.31,950</td>
+              <td>Inactive</td>
+              <td>Hx71Pa93M</td>
+            </tr>
+
+            <tr>
+              <td>Zenith Corp</td>
+              <td>2187 7754</td>
+              <td>Rs.14,430</td>
+              <td>Active</td>
+              <td>Qe52Lm80D</td>
+            </tr>
+            <tr>
+              <td>RapidGrid</td>
+              <td>9903 1042</td>
+              <td>Rs.58,620</td>
+              <td>Active</td>
+              <td>Nk37Tr21V</td>
+            </tr>
+            <tr>
+              <td>SilverArc</td>
+              <td>4821 6629</td>
+              <td>Rs.2,930</td>
+              <td>Inactive</td>
+              <td>Ys62Bx94T</td>
+            </tr>
+            <tr>
+              <td>Fusion Tech</td>
+              <td>3340 1180</td>
+              <td>Rs.44,100</td>
+              <td>Active</td>
+              <td>Pr90Lm42C</td>
+            </tr>
+            <tr>
+              <td>PrimeBase</td>
+              <td>6712 9013</td>
+              <td>Rs.17,880</td>
+              <td>Active</td>
+              <td>La73Qs28H</td>
+            </tr>
+            <tr>
+              <td>MicroNest</td>
+              <td>5503 3308</td>
+              <td>Rs.6,510</td>
+              <td>Inactive</td>
+              <td>Re62Wm11P</td>
+            </tr>
+            <tr>
+              <td>SkyBridge</td>
+              <td>8401 5520</td>
+              <td>Rs.23,600</td>
+              <td>Active</td>
+              <td>Ht92Lp45N</td>
+            </tr>
+            <tr>
+              <td>CodeHaven</td>
+              <td>3922 1146</td>
+              <td>Rs.33,720</td>
+              <td>Flagged</td>
+              <td>Ju81Ka63X</td>
+            </tr>
+            <tr>
+              <td>DataMint</td>
+              <td>7130 8894</td>
+              <td>Rs.76,940</td>
+              <td>Active</td>
+              <td>Fw37Pr52L</td>
+            </tr>
+            <tr>
+              <td>LogicEdge</td>
+              <td>1094 2277</td>
+              <td>Rs.8,200</td>
+              <td>Active</td>
+              <td>Gb64Tn90Q</td>
+            </tr>
+
+            <tr>
+              <td>Orbit Labs</td>
+              <td>6741 3319</td>
+              <td>Rs.61,320</td>
+              <td>Active</td>
+              <td>Vt80Lm12R</td>
+            </tr>
+            <tr>
+              <td>ClearPath</td>
+              <td>9980 2211</td>
+              <td>Rs.10,500</td>
+              <td>Inactive</td>
+              <td>Sk19Pa74H</td>
+            </tr>
+            <tr>
+              <td>BinaryWorks</td>
+              <td>2219 5552</td>
+              <td>Rs.46,900</td>
+              <td>Active</td>
+              <td>Dw62Lk11M</td>
+            </tr>
+            <tr>
+              <td>NovaEdge</td>
+              <td>8801 7423</td>
+              <td>Rs.18,240</td>
+              <td>Active</td>
+              <td>Te91Mn37C</td>
+            </tr>
+            <tr>
+              <td>StreamBase</td>
+              <td>3177 6822</td>
+              <td>Rs.5,810</td>
+              <td>Inactive</td>
+              <td>Uk63Lp20F</td>
+            </tr>
+            <tr>
+              <td>PeakShield</td>
+              <td>6534 9901</td>
+              <td>Rs.93,100</td>
+              <td>Flagged</td>
+              <td>Xp81Qa64S</td>
+            </tr>
+            <tr>
+              <td>OmniCore</td>
+              <td>1113 5577</td>
+              <td>Rs.25,430</td>
+              <td>Active</td>
+              <td>Qr52Ts92N</td>
+            </tr>
+            <tr>
+              <td>TrueLayer</td>
+              <td>7760 4482</td>
+              <td>Rs.12,990</td>
+              <td>Active</td>
+              <td>Yb73Lp18A</td>
+            </tr>
+            <tr>
+              <td>SecureFlow</td>
+              <td>4412 3390</td>
+              <td>Rs.29,840</td>
+              <td>Inactive</td>
+              <td>Ji60Kn21X</td>
+            </tr>
+            <tr>
+              <td>MetaGrid</td>
+              <td>6022 1187</td>
+              <td>Rs.34,600</td>
+              <td>Active</td>
+              <td>Lo84Tq73V</td>
+            </tr>
+
+            <tr>
+              <td>BrightStack</td>
+              <td>9331 2004</td>
+              <td>Rs.40,310</td>
+              <td>Active</td>
+              <td>Za92Lm55D</td>
+            </tr>
+            <tr>
+              <td>TerraSys</td>
+              <td>2455 1178</td>
+              <td>Rs.3,780</td>
+              <td>Inactive</td>
+              <td>Wm31Qp92L</td>
+            </tr>
+            <tr>
+              <td>InfraSoft</td>
+              <td>7771 8890</td>
+              <td>Rs.66,520</td>
+              <td>Active</td>
+              <td>Bh74Nk28R</td>
+            </tr>
+            <tr>
+              <td>UnitCore</td>
+              <td>8899 3102</td>
+              <td>Rs.21,410</td>
+              <td>Active</td>
+              <td>Pt09Lm84J</td>
+            </tr>
+            <tr>
+              <td>GreyMatter</td>
+              <td>5510 2241</td>
+              <td>Rs.48,970</td>
+              <td>Flagged</td>
+              <td>Ce63Tr15Q</td>
+            </tr>
+            <tr>
+              <td>NextWave</td>
+              <td>3307 6620</td>
+              <td>Rs.13,600</td>
+              <td>Active</td>
+              <td>Dn72Lp49M</td>
+            </tr>
+            <tr>
+              <td>HyperLine</td>
+              <td>1204 7783</td>
+              <td>Rs.57,890</td>
+              <td>Active</td>
+              <td>Rf82Qa30B</td>
+            </tr>
+            <tr>
+              <td>SecureNest</td>
+              <td>4021 1193</td>
+              <td>Rs.7,300</td>
+              <td>Inactive</td>
+              <td>Hs51Lm22P</td>
+            </tr>
+            <tr>
+              <td>CloudAxis</td>
+              <td>9600 4405</td>
+              <td>Rs.82,460</td>
+              <td>Active</td>
+              <td>Ku73Wp10T</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </body>
 </html>
