@@ -10,7 +10,7 @@ const PORT = 3000;
 
 
 const ADMIN_USER = "admin";
-const ADMIN_PASSWORD = "batman";
+const ADMIN_PASSWORD = "kitkat";
 
 
 app.post("/login", (req, res) => {
